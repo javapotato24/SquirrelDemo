@@ -13,15 +13,19 @@ public class Main {
         simon = new squirrel("blue","large");
         roadkill = new squirrel("black", "flat");
 
+        
         simon.run();
+
+        //unalive roadkill
         roadkill.kill();
 
+        //output status of road kill
         if(roadkill.alive == true){
             System.out.println("Alive!");
         }else{
             System.out.println("Dead!");
         }
-
+        
         System.out.println("alvin is a " +  alvin.size + " squirrel who feels like P.Diddy with fur and is " + alvin.Colour);
         System.out.println("theodore is a " + theodore.size + "and he is " + theodore.Colour + "he enjoys sipping lemonade on P.Diddy's yacht");
     }
